@@ -129,7 +129,7 @@ export class OdontogramaAnatomicoUIComponent {
       this.selectedTreatment = this.datos[existingToothIndex].tratamiento;
     } else {
       this.selectedRowIndex = null;
-      this.selectedTreatment = ''; 
+      this.selectedTreatment = '';
     }
   }
 
@@ -171,5 +171,9 @@ export class OdontogramaAnatomicoUIComponent {
 
   eliminarFila(index: number): void {
     this.datos.splice(index, 1);
+  }
+
+  registrarTratamiento(): void {
+    console.log(this.datos);
   }
 }
